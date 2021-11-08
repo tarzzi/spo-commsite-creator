@@ -1,6 +1,6 @@
 # Sharepoint site creation automator
 
-For creating multiple communication sites with automation.
+For creating multiple communication sites automated with powershell.
 
 ### About
 Automate SharePoint Online communication site creation with this tool.
