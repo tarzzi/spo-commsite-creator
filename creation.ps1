@@ -22,7 +22,7 @@ $siteURL = $WorkSheet.Cells['B3'].Text
 $siteOwner = $WorkSheet.Cells['B6'].Text
 $sitePrefix = $WorkSheet.Cells['C6'].Text
 #$siteTemplate = $WorkSheet.Cells['C3'].Text
-#$lcid = $WorkSheet.Cells['D3'].Text // Finnish lcid not supported??? maby string -> int conv problem
+#$lcid = $WorkSheet.Cells['D3'].Text // Finnish lcid not supported?
     
 if ($totalNoOfRecords -gt 0) {  
     #Connect to Tenant Admin    
@@ -40,7 +40,6 @@ if ($totalNoOfRecords -gt 0) {
         $cell = 'A' + $rowNo 
         $siteName = $WorkSheet.Cells[$cell].Text
         $siteFullName = $sitePrefix + $siteName
-        #Debug
         Write-Host "Creating Cell: ($cell) SiteName: ($siteFullName)"
         if($siteName.Length -gt 1){
             Try{
